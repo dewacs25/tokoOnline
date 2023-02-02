@@ -6,10 +6,10 @@
 ![anime-waifu](https://user-images.githubusercontent.com/108568814/216241389-b930651f-d618-4810-9fe4-4678ce008d7d.gif)
 
 
-<div style="width : 50px">
+
 ![Frame 2aji](https://user-images.githubusercontent.com/108568814/216242580-20b6cee7-efc4-4157-8e13-7da4a9a18bba.png)
 ![aa 1(1)](https://user-images.githubusercontent.com/108568814/216242624-e81c3c6a-e050-449b-85a7-9124e1384f6e.jpg)
-</div>
+
 
 
 
