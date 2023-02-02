@@ -7,10 +7,12 @@
 
 
 
-![Frame 2aji](https://user-images.githubusercontent.com/108568814/216242580-20b6cee7-efc4-4157-8e13-7da4a9a18bba.png)
-![aa 1(1)](https://user-images.githubusercontent.com/108568814/216242624-e81c3c6a-e050-449b-85a7-9124e1384f6e.jpg)
+![Frame 2aji](https://user-images.githubusercontent.com/108568814/216242580-20b6cee7-efc4-4157-8e13-7da4a9a18bba.png?style=imgP)
+![aa 1(1)](https://user-images.githubusercontent.com/108568814/216242624-e81c3c6a-e050-449b-85a7-9124e1384f6e.jpg?style=imgP)
 
-
+img[src$="imgP"] {
+  width:50px;
+}
 
 
 
