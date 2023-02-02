@@ -3,7 +3,7 @@
 <p>2. Bima Tresna Putra</p>
 <p>3. Aji Zulkarnaen Syah</p>
 
-<div class="tenor-gif-embed" data-postid="25689550" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/anime-waifu-dance-gif-25689550">Anime Waifu Sticker</a>from <a href="https://tenor.com/search/anime-stickers">Anime Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<img src="https://tenor.com/view/anime-waifu-dance-gif-25689550" />
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
