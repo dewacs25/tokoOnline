@@ -3,9 +3,9 @@
 <p>2. Bima Tresna Putra</p>
 <p>3. Aji Zulkarnaen Syah</p>
 
-<iframe src="https://giphy.com/embed/4ilFRqgbzbx4c" width="448" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-![]( {https://giphy.com/embed/4ilFRqgbzbx4c} )
+
+![]( {https://media.tenor.com/x8v1oNUOmg4AAAAM/rickroll-roll.gif} )
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
