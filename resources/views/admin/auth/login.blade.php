@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{{ asset('t_admin/assets/css/pages/auth.css') }}" />
     <link rel="shortcut icon" href="{{ asset('t_admin/assets/images/logo/favicon.svg') }}" type="image/x-icon" />
     <link rel="shortcut icon" href="{{ asset('t_admin/assets/images/logo/favicon.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ asset('css/haudy.css') }}">
+
 </head>
 
 <body>
@@ -16,15 +18,15 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <div class="auth-logo">
+                    {{-- <div class="auth-logo">
                         <a href="index.html"><img src="{{ asset('t_admin/assets/images/logo/logo.svg') }}"
                                 alt="Logo" /></a>
-                    </div>
-                    <h1 class="auth-title">Log in.</h1>
-                    <p class="auth-subtitle mb-5">
+                    </div> --}}
+                    <h1 class="auth-title">Back-end</h1>
+                    {{-- <p class="auth-subtitle mb-5">
                         Log in with your data that you entered during
                         registration.
-                    </p>
+                    </p> --}}
                     @if ($errors->any())
                         @foreach ($errors->all() as $err)
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -70,7 +72,10 @@
                 </div>
             </div>
             <div class="col-lg-7 d-none d-lg-block">
-                <div id="auth-right"></div>
+                <div id="auth-right">
+                    <img src="{{ asset('image/a1.png') }}" alt="" class="w-100">
+                    
+                </div>
             </div>
         </div>
     </div>

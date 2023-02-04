@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="{{ asset('t_admin/assets/images/logo/favicon.png') }}" type="image/png">
 
     <link rel="stylesheet" href="{{ asset('t_admin/assets/css/shared/iconly.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/haudy.css') }}">
 
 </head>
 
