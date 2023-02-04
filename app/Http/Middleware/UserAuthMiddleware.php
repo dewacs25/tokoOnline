@@ -17,8 +17,8 @@ class UserAuthMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!Auth::guard('user')->check()) {
-            return redirect('/auth/login');
+        if (!Auth::guard('users')->check()) {
+            return redirect('/login');
         }
         return $next($request);
     }

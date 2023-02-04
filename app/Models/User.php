@@ -6,13 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model as Authenticatable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
     use HasFactory, HasApiTokens, Notifiable;
 
-    protected $guard = 'user';
+    protected $table = 'users';
+    protected $guard = 'users';
 
     protected $fillable = [
        'nama_lengkap',
@@ -21,7 +22,7 @@ class User extends Authenticatable
        'password',
        'kode_verifikasi',
        'confirm_verifikasi',
-       'validate',
+       'validate' ,
        'token',
     ];
     

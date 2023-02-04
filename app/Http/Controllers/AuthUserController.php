@@ -54,7 +54,7 @@ class AuthUserController extends Controller
     public function login()
     {
         $data['title'] = 'Login';
-        return view('auth/login', $data);
+        return view('/frontend/auth/login', $data);
     }
 
     public function login_action(Request $req)
@@ -64,10 +64,10 @@ class AuthUserController extends Controller
             'password' => 'required',
         ]);
 
-        if (Auth::guard('users')->attempt(['email' => $req->email, 'password' => $req->password])) {
-            $req->session()->regenerate();
-            return redirect()->intended('/');
-        }
+        if (Auth::guard('users')->attempt(['email' => $req->email, 'password' => $req->password, 'validate'=>'verified'])) {
+           $req->session()->regenerate();
+           return redirect()->intended('/');
+        } 
 
         return back()->withErrors([
             'password' => 'email atau password salah'
@@ -114,14 +114,15 @@ class AuthUserController extends Controller
 
         if ($cekToken) {
             if ($token == $cekToken->token && $req->kode == $cekToken->kode_verifikasi) {
-                User::where('id_user',$cekToken->id_user)->update([
-                    'validate'=>'verified',
+                User::where('id', $cekToken->id)->update([
+                    'validate' => 'verified',
                 ]);
+                return redirect('/login');
             } else {
-                return redirect('/confirm/' . $token)->with(session()->flash('danger', 'Kode Salah')); 
+                return redirect('/confirm/' . $token)->with(session()->flash('danger', 'Kode Salah'));
             }
-        }else{
-            return redirect('/token-tidak-di-temukan'); 
+        } else {
+            return redirect('/token-tidak-di-temukan');
         }
     }
 }

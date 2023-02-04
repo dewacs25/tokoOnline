@@ -22,7 +22,7 @@ Route::get('/admin', function () {
 
 Route::get('/', function () {
     return view('frontend.index');
-});
+})->middleware('user.auth');
 
 
 
