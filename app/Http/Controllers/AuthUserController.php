@@ -114,7 +114,7 @@ class AuthUserController extends Controller
 
         if ($cekToken) {
             if ($token == $cekToken->token && $req->kode == $cekToken->kode_verifikasi) {
-                User::where('id', $cekToken->id)->update([
+                User::where('id_user', $cekToken->id_user)->update([
                     'validate' => 'verified',
                 ]);
                 return redirect('/login');

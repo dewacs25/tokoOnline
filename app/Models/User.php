@@ -14,6 +14,7 @@ class User extends Authenticatable
 
     protected $table = 'users';
     protected $guard = 'users';
+    protected $primaryKey = 'id_user';
 
     protected $fillable = [
        'nama_lengkap',
@@ -25,5 +26,11 @@ class User extends Authenticatable
        'validate' ,
        'token',
     ];
+
+
+    public function toko()
+    {
+        return $this->hasOne('App\Models\Toko', 'id_user');
+    }
     
 }

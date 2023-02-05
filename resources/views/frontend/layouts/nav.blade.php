@@ -9,13 +9,25 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+          
+          @guest('users')
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="/login">Login</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="">Register</a>
+            <a class="nav-link" href="/register">Register</a>
           </li>
+          @endguest
+
+          @auth('users')
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+          @endauth
+
+
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
